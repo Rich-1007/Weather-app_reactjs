@@ -3,7 +3,7 @@ import Button from "@mui/material/Button";
 import "./SearchBox.css";
 import { useState } from "react";
 
-export default function SearchBox({setWeatherin}) {
+export default function SearchBox({ setWeatherin }) {
   let [city, setCity] = useState("");
 
   const API_URL = "https://api.openweathermap.org/data/2.5/weather";
@@ -23,7 +23,7 @@ export default function SearchBox({setWeatherin}) {
       weather: jsonRes.weather[0].description,
     };
     console.log(jsonRes);
-    setWeatherin(result)
+    setWeatherin(result);
   };
 
   let handleChange = (evt) => {
@@ -39,7 +39,6 @@ export default function SearchBox({setWeatherin}) {
 
   return (
     <div className="SearchBox">
-      
       <form onSubmit={handleSubmit}>
         <TextField
           onChange={handleChange}
@@ -51,9 +50,8 @@ export default function SearchBox({setWeatherin}) {
         <br />
         <br />
         <Button variant="contained" type="submit">
-          Send
+          Search
         </Button>
-        
       </form>
     </div>
   );

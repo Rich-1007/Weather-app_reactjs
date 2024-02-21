@@ -7,10 +7,6 @@ import Button from "@mui/material/Button";
 import WeatherApp from "./WeatherApp";
 
 function App() {
-  // let buttonHandeler = () => {
-  //   console.log("Button Was Clicked");
-  // };
-  // const [count, setCount] = useState(0);
 
   return (
     <>
