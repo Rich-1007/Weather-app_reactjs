@@ -1,4 +1,7 @@
 import TextField from "@mui/material/TextField";
+
+
+
 import Button from "@mui/material/Button";
 import "./SearchBox.css";
 import { useState } from "react";
@@ -40,11 +43,10 @@ export default function SearchBox({ setWeatherin }) {
   return (
     <div className="SearchBox">
       <form onSubmit={handleSubmit}>
-        <TextField>
-          onChange={handleChange}
-          value={city}
-          id="outlined-basic" label="City Name" variant="outlined"
-        </TextField>
+
+      <TextField value={city} onChange={handleChange} id="outlined-basic" label="City Name" variant="outlined" />
+
+        
 
         <br />
         <br />
