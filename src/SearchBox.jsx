@@ -40,13 +40,12 @@ export default function SearchBox({ setWeatherin }) {
   return (
     <div className="SearchBox">
       <form onSubmit={handleSubmit}>
-        <TextField
+        <TextField>
           onChange={handleChange}
           value={city}
-          id="outlined-basic"
-          label="City Name"
-          variant="outlined"
-        />
+          id="outlined-basic" label="City Name" variant="outlined"
+        </TextField>
+
         <br />
         <br />
         <Button variant="contained" type="submit">
