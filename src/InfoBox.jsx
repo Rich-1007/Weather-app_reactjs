@@ -27,7 +27,7 @@ export default function InfoBox({ info }) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {info.city} {<ThunderstormIcon />}
+            {info.city} 
             {/* info.humidity > 70 
             ? <ThunderstormIcon/> 
             : info.temp > 15 

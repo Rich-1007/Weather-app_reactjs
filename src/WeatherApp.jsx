@@ -1,13 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import SearchBox from "./SearchBox";
 import InfoBox from "./infoBox";
 
 export default function WeatherApp() {
   const [weatherInfo, setWeatherInfo] = useState(null);
 
-  if (weatherInfo) {
-    console.log(weatherInfo);
-  }
+    
 
   return (
     <div>
